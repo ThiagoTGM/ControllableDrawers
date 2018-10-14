@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ControllableDrawers</string>
+    <string name="title_text">Controllable Drawers</string>
+    <string name="title_description">Please connect to a nearby Arduino device. </string>
+    <string name="bluetooth_status">Bluetooth Status:  </string>
+    <string name="on_off">&lt;on/off&gt;</string>
+    <string name="on_off_button">Bluetooth ON/OFF</string>
+    <string name="find_button">Find New Devices</string>
+    <string name="view_button">View Paired Devices</string>
+    <string name="activate_button">Display Drawers</string>
+    <string name="back_button">Back</string>
 </resources>
