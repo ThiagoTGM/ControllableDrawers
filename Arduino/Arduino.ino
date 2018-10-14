@@ -63,12 +63,14 @@ void openDoor( int doorN ) {
     return; // Abort.
   }
 
+  doors[doorN].attach( SERVO_PINS[doorN] );
   for ( int i = CLOSED_ANGLE + 1; i <= OPEN_ANGLE; i += MOVE_INCREMENT ) {  
 
     doors[doorN].write( i );
     delay( MOVE_DELAY );
     
   }
+  doors[doorN].detach();
 
   digitalWrite( LED_PINS[doorN], HIGH );
   closed[doorN] = false;
@@ -86,12 +88,14 @@ void closeDoor( int doorN ) {
     return; // Abort.
   }
 
+  doors[doorN].attach( SERVO_PINS[doorN] );
   for ( int i = OPEN_ANGLE - 1; i >= CLOSED_ANGLE; i -= MOVE_INCREMENT ) {
     
     doors[doorN].write( i );
     delay( MOVE_DELAY );
     
   }
+  doors[doorN].detach();
 
   digitalWrite( LED_PINS[doorN], LOW );
   closed[doorN] = true;
@@ -121,6 +125,7 @@ void setup() {
 
     doors[i].attach( SERVO_PINS[i] );
     doors[i].write( CLOSED_ANGLE );
+    doors[i].detach();
 
     shouldToggle[i] = false;
     closed[i] = true;
