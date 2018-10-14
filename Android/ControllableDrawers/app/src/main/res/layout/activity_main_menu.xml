@@ -10,18 +10,18 @@
 
     <RelativeLayout
         android:layout_width="368dp"
-        android:layout_height="495dp"
+        android:layout_height="551dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center"
-            android:orientation="vertical"
-            android:id="@+id/linearLayout">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView"
@@ -30,11 +30,12 @@
                 android:layout_above="@+id/linearLayout"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:layout_marginBottom="60dp"
+                android:layout_marginBottom="40dp"
                 android:layout_weight="1"
                 android:text="Controllable Drawers"
                 android:textColor="@color/colorMainTitleText"
-                android:textSize="32dp"
+                android:textSize="35dp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -44,54 +45,60 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:background="@color/colorMainButtonBg"
-                android:padding="5dp"
-                android:paddingBottom="5dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="5dp"
+                android:background="@drawable/rounded_corners"
+                android:padding="10dp"
+                android:text="Bluetooth ON/OFF"
                 android:textColor="@color/colorMainButtonText"
-                android:textSize="20dp"
-                android:text="Bluetooth ON/OFF"/>
+                android:textSize="25dp"/>
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
-                android:layout_marginTop="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:background="@color/colorMainButtonBg"
-                android:padding="5dp"
-                android:paddingBottom="5dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="5dp"
+                android:background="@drawable/rounded_corners"
+                android:padding="10dp"
                 android:text="Find New Devices"
                 android:textColor="@color/colorMainButtonText"
-                android:textSize="20dp"/>
+                android:textSize="25dp"/>
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
-                android:background="@color/colorMainButtonBg"
-                android:padding="5dp"
-                android:paddingBottom="5dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="5dp"
+                android:background="@drawable/rounded_corners"
+                android:padding="10dp"
+                android:text="View Paired Devices"
                 android:textColor="@color/colorMainButtonText"
-                android:textSize="20dp"
-                android:text="View Paired Devices"/>
+                android:textSize="25dp"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_active"
+                android:padding="15dp"
+                android:text="Activate Drawer"
+                android:textColor="@color/colorMainButtonText"
+                android:textStyle="bold"
+                android:textSize="35dp"/>
 
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
                 android:layout_weight="1"
-                android:visibility="gone"/>
+                android:visibility="visible"/>
         </LinearLayout>
 
     </RelativeLayout>
