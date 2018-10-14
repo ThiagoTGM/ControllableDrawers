@@ -22,7 +22,7 @@
             android:layout_marginBottom="55dp"
             android:layout_gravity="center"
             android:text="Controllable Drawers"
-            android:textColor="#498fff"
+            android:textColor="#000000"
             android:textSize="32dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -43,8 +43,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:text="Bluetooth ON/OFF"/>
+                android:background="@color/colorMainButtonBg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorMainButtonText"
+                android:text="Bluetooth ON/OFF"                />
 
             <Button
                 android:id="@+id/button2"
@@ -53,7 +56,10 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="@android:color/transparent"
+                android:background="@color/colorMainButtonBg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorMainButtonText"
                 android:text="Find New Devices"/>
 
             <Button
@@ -61,13 +67,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@android:color/transparent"
+                android:background="@color/colorMainButtonBg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorMainButtonText"
                 android:text="View Paired Devices"/>
 
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:visibility="gone"/>
         </LinearLayout>
     </RelativeLayout>
 
