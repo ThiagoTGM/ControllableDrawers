@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import java.util.Set;
 
+//activity where users can see all devices connected w/ bluetooth
 public class DeviceMenu extends AppCompatActivity {
 
     BluetoothAdapter BA = BluetoothAdapter.getDefaultAdapter();
