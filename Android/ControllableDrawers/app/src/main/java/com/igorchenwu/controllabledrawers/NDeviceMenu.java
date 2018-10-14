@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+//ok maybe I dun goofed and we might not need to use this one but w/e
 public class NDeviceMenu extends AppCompatActivity {
 
     //switch to main menu activity

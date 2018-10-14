@@ -31,7 +31,7 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void findDiscoverableDevices (View view) {
-        Intent i = new Intent(this, NDeviceMenu.class);
+        Intent i = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
         startActivity(i);
     }
 
